@@ -14,13 +14,13 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'echo  "Sudhir"'
+        sh 'echo Â "Sudhir"'
       }
     }
 
     stage('report') {
       steps {
-        archiveArtifacts 'all'
+        node(label: 'Sudhir_node1')
       }
     }
 
