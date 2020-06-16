@@ -18,11 +18,5 @@ pipeline {
       }
     }
 
-    stage('report') {
-      steps {
-        node(label: 'Sudhir_node1')
-      }
-    }
-
   }
 }
