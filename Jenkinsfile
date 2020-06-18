@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'golang'
+      image 'ubuntu'
     }
 
   }
@@ -15,17 +15,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo  "Sudhir"'
-        sh '''echo PASS
-
-
-
-
-
-
-
-
- ;
-ls ; pwd'''
+        sh 'pwd'
       }
     }
 
