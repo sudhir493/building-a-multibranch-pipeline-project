@@ -15,6 +15,17 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo  "Sudhir"'
+        sh '''echo PASS
+
+
+
+
+
+
+
+
+ ;
+ls ; pwd'''
       }
     }
 
